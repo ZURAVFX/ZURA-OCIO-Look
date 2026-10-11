@@ -1,3 +1,206 @@
-﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ZURA OCIO Look</title><meta name="description" content="OCIO 2 Display, View and Look transforms directly inside Adobe After Effects."><style>
-:root{--bg:#08090c;--panel:#111217;--text:#f6f7fb;--muted:#a8adb8;--line:#252832;--accent:#9d8cff;--max:1120px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(800px 460px at 50% -100px,#211b45 0,transparent 68%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 28px}nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.brand{font-weight:750;letter-spacing:.08em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px}.hero{padding:100px 0 70px;text-align:center}.eyebrow{display:inline-flex;padding:7px 11px;border:1px solid #37314f;border-radius:999px;color:#c7bdff;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#14111f}.hero h1{font-size:clamp(48px,8vw,94px);line-height:.96;letter-spacing:-.055em;margin:24px auto;max-width:1000px}.hero p{max-width:760px;margin:0 auto;color:var(--muted);font-size:clamp(18px,2.2vw,24px)}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}.btn{padding:13px 18px;border-radius:12px;border:1px solid var(--line);background:#15171d;font-weight:650}.btn.primary{background:var(--accent);color:#0b0b0e;border-color:var(--accent)}.visual{margin:58px auto 0;max-width:860px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,#171822,#0c0e12);box-shadow:0 30px 100px #0009;padding:18px}.effect{border:1px solid #2a2d37;border-radius:16px;overflow:hidden;text-align:left}.bar{height:42px;background:#111319;border-bottom:1px solid #252831;display:flex;align-items:center;justify-content:space-between;padding:0 14px;color:#9ea4af;font-size:12px}.body{padding:24px;display:grid;gap:14px}.control{display:grid;grid-template-columns:130px 1fr;gap:16px;align-items:center}.select{height:42px;border:1px solid #303440;border-radius:9px;background:#171a21;position:relative}.select:after{content:"";position:absolute;right:14px;top:16px;border:5px solid transparent;border-top-color:#8d93a0}.control b{font-size:13px;color:#dfe2e8}.preview{height:180px;border:1px solid #252933;border-radius:12px;background:linear-gradient(115deg,#26233f,#5a477e 35%,#d0a46a 66%,#edf0ef);position:relative;overflow:hidden}.preview:after{content:"VIEW TRANSFORM";position:absolute;inset:auto 16px 14px auto;font-size:10px;letter-spacing:.16em;color:#fff9}.section{padding:90px 0}.section h2{font-size:clamp(34px,5vw,58px);letter-spacing:-.04em;margin:0 0 16px}.lede{max-width:780px;color:var(--muted);font-size:20px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.card{padding:24px;border:1px solid var(--line);border-radius:18px;background:#101217}.card b{display:block;font-size:18px;margin-bottom:8px}.card p{margin:0;color:var(--muted)}.steps{counter-reset:s;display:grid;gap:12px;margin-top:30px}.step{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;padding:18px;border:1px solid var(--line);border-radius:16px;background:#0f1115}.step:before{counter-increment:s;content:counter(s);width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--accent);color:#09090b;font-weight:800}.small{color:var(--muted);font-size:14px}.note{padding:20px 22px;border:1px solid #3d3759;border-radius:16px;background:#151225;color:#c6c2d5;margin-top:30px}.footer{padding:38px 0 50px;color:#7e8490;border-top:1px solid var(--line);font-size:14px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}@media(max-width:800px){.grid{grid-template-columns:1fr}.navlinks{display:none}.hero{padding-top:60px}.control{grid-template-columns:100px 1fr}}
-</style></head><body><div class="wrap"><nav><a class="brand" href="#">ZURA<span>VFX</span></a><div class="navlinks"><a href="#what">What it does</a><a href="#workflow">Workflow</a><a href="#install">Install</a><a href="https://github.com/ZURAVFX/ZURA-OCIO-Look">GitHub</a></div></nav><main><section class="hero"><div class="eyebrow">After Effects · OpenColorIO 2 · Windows</div><h1>Your OCIO view,<br>inside After Effects.</h1><p>Choose the configuration, Display, View and Look you actually use in production, then apply the OCIO 2 viewing transform directly in your comp.</p><div class="actions"><a class="btn primary" href="https://github.com/ZURAVFX/ZURA-OCIO-Look/raw/refs/heads/main/dist/ZURA%20OCIO_Look.aex">Download .aex</a><a class="btn" href="https://github.com/ZURAVFX/ZURA-OCIO-Look">View GitHub repo</a></div><div class="visual"><div class="effect"><div class="bar"><span>Effect Controls</span><span>ZURA OCIO Look</span></div><div class="body"><div class="preview"></div><div class="control"><b>OCIO Config</b><div class="select"></div></div><div class="control"><b>Display</b><div class="select"></div></div><div class="control"><b>View</b><div class="select"></div></div><div class="control"><b>Look</b><div class="select"></div></div></div></div></div></section><section id="what" class="section"><h2>Colour-managed viewing without the workaround.</h2><p class="lede">ZURA OCIO Look exposes an OpenColorIO 2 display/look transform as an After Effects effect, so the same display pipeline used across CG and VFX tools can live directly in the comp.</p><div class="grid"><div class="card"><b>OCIO 2 processing</b><p>Modern OpenColorIO transforms with configuration-driven behaviour.</p></div><div class="card"><b>Display · View · Look</b><p>Expose the artist-facing choices that matter when matching a studio viewing pipeline.</p></div><div class="card"><b>GPU path</b><p>Designed with GPU rendering support and explicit error reporting when GPU processing is unavailable.</p></div></div></section><section id="workflow" class="section"><h2>Made for CG/VFX review chains.</h2><div class="grid"><div class="card"><b>Match other DCCs</b><p>Use the same OCIO config and viewing choices as Blender, Houdini, Nuke or Resolve.</p></div><div class="card"><b>Config-driven menus</b><p>Available Displays, Views and Looks come from the OCIO configuration you load.</p></div><div class="card"><b>$OCIO aware</b><p>Works with the conventional OCIO environment-variable workflow as well as selected configurations.</p></div></div><div class="note"><b>Important:</b> this is a viewing/look transform tool. It does not automatically determine the correct input colour space for every source, and it is not a substitute for a correctly designed colour pipeline.</div></section><section id="install" class="section"><h2>Simple Windows install.</h2><div class="steps"><div class="step"><div><b>Download `ZURA OCIO_Look.aex`</b><div class="small">The current public build is a Windows After Effects plug-in.</div></div></div><div class="step"><div><b>Copy it into an After Effects plug-ins location</b><div class="small">Use your AE version's Support Files\Plug-ins folder or an appropriate shared Adobe MediaCore location.</div></div></div><div class="step"><div><b>Restart AE and add the effect</b><div class="small">Load your OCIO config, then choose Display, View and Look from the effect controls.</div></div></div></div><div class="actions" style="justify-content:flex-start"><a class="btn primary" href="https://github.com/ZURAVFX/ZURA-OCIO-Look/raw/refs/heads/main/dist/ZURA%20OCIO_Look.aex">Download plug-in</a><a class="btn" href="https://github.com/ZURAVFX/ZURA-OCIO-Look/issues">Compatibility / bugs</a></div></section></main><footer class="footer"><span>Updated and packaged by ZURA VFX.</span><span>OpenColorIO and upstream AdobeOCIO components retain their respective licences and copyrights.</span></footer></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZURA OCIO Look | ZURA VFX</title>
+<meta name="description" content="OCIO 2 display, view and look transforms directly inside Adobe After Effects.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="ZURA OCIO Look | ZURA VFX">
+<meta property="og:description" content="OCIO 2 display, view and look transforms directly inside Adobe After Effects.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("reveal-ready");}</script>
+<style>
+:root{
+  --canvas:#ffffff; --ink:#111111; --muted:#686868;
+  --well:#e8e8e8; --well-deep:#dedede; --line:#d2d2d2; --blue:#5f6fff;
+  --page-pad:clamp(18px,3vw,48px); --max:1240px; --header:78px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;min-width:320px}
+body{margin:0;background:var(--canvas);color:var(--ink);font-family:"Inter Tight",Inter,Arial,sans-serif;font-size:16px;line-height:1.35;letter-spacing:0;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,video{max-width:100%;display:block}
+figure{margin:0}
+h1,h2,h3,p{margin:0}
+h1,h2,h3,strong{font-weight:600}
+::selection{background:var(--blue);color:#fff}
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.shell{width:min(100%,var(--max));margin-inline:auto;padding-inline:var(--page-pad)}
+
+.skip-link{position:fixed;top:12px;left:12px;z-index:100;background:var(--ink);color:#fff;padding:10px 14px;transform:translateY(-160%);transition:transform .18s}
+.skip-link:focus{transform:translateY(0)}
+
+.site-header{position:sticky;top:0;z-index:50;background:#fffffff2;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:24px;height:var(--header);width:min(100%,var(--max));margin-inline:auto;padding-inline:var(--page-pad)}
+.wordmark{font-weight:700;font-size:clamp(1.05rem,1.6vw,1.35rem);white-space:nowrap}
+.wordmark span{color:var(--blue)}
+.site-nav{display:flex;align-items:center;gap:clamp(18px,2.6vw,40px);font-size:.86rem}
+.site-nav a{padding:6px 0;border-bottom:1px solid transparent;transition:color .16s,border-color .16s}
+.site-nav a:hover{color:var(--blue);border-color:var(--blue)}
+
+.intro{padding:clamp(56px,7vw,110px) 0 clamp(40px,5vw,72px)}
+.kicker{color:var(--muted);text-transform:uppercase;font-size:.76rem}
+.intro h1{margin:18px 0 0;font-size:clamp(3rem,8vw,7.5rem);line-height:.84;max-width:16ch}
+.lede{margin-top:22px;max-width:60ch;color:#303030;font-size:clamp(1.02rem,1.5vw,1.3rem)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px;border:1px solid var(--line);background:var(--canvas);font:inherit;font-weight:600;transition:border-color .16s,background-color .16s,color .16s}
+.btn:hover{border-color:var(--blue);background:var(--well);color:var(--blue)}
+.btn--primary{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn--primary:hover{background:#000;border-color:#000;color:#fff}
+
+.media{margin-top:clamp(38px,5vw,64px)}
+.mask-frame{position:relative;border:1.25px solid var(--blue);background:var(--well-deep);aspect-ratio:16/9}
+.mask-frame img,.mask-frame video{width:100%;height:100%;object-fit:cover}
+.mask-point{position:absolute;z-index:2;width:7px;height:7px;border:1px solid var(--blue);background:var(--canvas);transform:translate(-50%,-50%)}
+.mask-point--tl{top:0;left:0}
+.mask-point--tr{top:0;left:100%}
+.mask-point--bl{top:100%;left:0}
+.mask-point--br{top:100%;left:100%}
+
+.band{border-top:1px solid var(--line);padding:clamp(46px,6vw,92px) 0}
+.band h2{font-size:clamp(1.9rem,3.6vw,3.4rem);line-height:1;max-width:24ch}
+.band .lede{margin-top:16px}
+
+.rows,.steps{list-style:none;margin:clamp(28px,3.6vw,48px) 0 0;padding:0;border-top:1px solid var(--line)}
+.rows li{display:grid;grid-template-columns:52px minmax(0,1fr) minmax(0,1.35fr);gap:clamp(14px,2vw,32px);align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line)}
+.rows .n{color:var(--muted);font-size:.8rem}
+.rows .t{font-weight:600;font-size:clamp(1.05rem,1.7vw,1.5rem)}
+.rows .d{color:#444;font-size:.95rem}
+
+.steps{counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:52px minmax(0,1fr);gap:clamp(14px,2vw,32px);padding:22px 0;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s,decimal-leading-zero);color:var(--blue);font-weight:600;font-size:.9rem}
+.steps .t{font-weight:600;font-size:clamp(1.02rem,1.6vw,1.35rem)}
+.steps .d{color:#444;font-size:.95rem;margin-top:6px;max-width:62ch}
+
+.note{margin-top:clamp(30px,4vw,54px);border-left:2px solid var(--blue);padding:4px 0 4px 20px;max-width:70ch;color:#333}
+.note b{display:block;margin-bottom:6px}
+
+.site-footer{border-top:1px solid var(--line);margin-top:clamp(60px,8vw,120px)}
+.site-footer__inner{width:min(100%,var(--max));margin-inline:auto;padding:clamp(34px,4vw,52px) var(--page-pad);display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:flex-end}
+.site-footer__name{font-weight:600;color:var(--ink)}
+.site-footer p{color:var(--muted);font-size:.82rem;margin-top:5px}
+.site-footer nav{display:flex;flex-wrap:wrap;gap:24px;font-size:.85rem}
+.site-footer nav a:hover{color:var(--blue)}
+
+.reveal-ready [data-reveal]{transform:translateY(14px);transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.reveal-ready [data-reveal].is-visible{transform:none}
+
+@media (max-width:820px){
+  :root{--header:62px}
+  .site-nav{gap:16px;font-size:.8rem}
+  .rows li{grid-template-columns:34px minmax(0,1fr);gap:8px 16px}
+  .rows .d{grid-column:2}
+  .steps li{grid-template-columns:34px minmax(0,1fr);gap:8px 16px}
+}
+@media (max-width:470px){
+  .site-nav a:not(:last-child){display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal-ready [data-reveal]{transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="wordmark" href="https://zuravfx.com" aria-label="ZURA VFX, home">ZURA <span>VFX</span></a>
+    <nav class="site-nav" aria-label="Page navigation">
+      <a href="https://github.com/ZURAVFX/ZURA-OCIO-Look">GitHub</a>
+      <a href="#install">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="shell">
+
+    <section class="intro">
+      <p class="kicker">After Effects / OpenColorIO 2 / Windows</p>
+      <h1>OCIO 2 viewing inside After Effects.</h1>
+      <p class="lede">Choose the configuration, Display, View and Look you actually use in production, then apply the OCIO 2 viewing transform directly in your comp.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="https://github.com/ZURAVFX/ZURA-OCIO-Look/raw/refs/heads/main/dist/ZURA%20OCIO_Look.aex">Download .aex</a>
+        <a class="btn" href="https://github.com/ZURAVFX/ZURA-OCIO-Look">View on GitHub</a>
+      </div>
+    </section>
+
+    <section class="band">
+      <h2>Colour-managed viewing without the workaround.</h2>
+      <p class="lede">The effect exposes an OpenColorIO 2 display and look transform as a native After Effects effect, so the viewing setup used across the rest of the pipeline can live inside the comp.</p>
+      <ul class="rows" data-reveal>
+        <li><span class="n">01</span><span class="t">OCIO 2 processing</span><span class="d">Modern OpenColorIO transforms with configuration-driven behaviour.</span></li>
+        <li><span class="n">02</span><span class="t">Display, View and Look</span><span class="d">The artist-facing choices that matter when matching a studio viewing pipeline.</span></li>
+        <li><span class="n">03</span><span class="t">GPU path</span><span class="d">GPU rendering with explicit CPU and error fallback reporting.</span></li>
+      </ul>
+    </section>
+
+    <section class="band">
+      <h2>Built for CG and VFX review chains.</h2>
+      <p class="lede">Use the same configuration and viewing choices as Blender, Houdini, Nuke or Resolve.</p>
+      <ol class="steps" data-reveal>
+        <li><div><span class="t">Load a configuration</span><p class="d">Point the effect at an OCIO config, or use the $OCIO environment variable.</p></div></li>
+        <li><div><span class="t">Choose Display, View and Look</span><p class="d">The menus come from the config you loaded, so they match the rest of the pipeline.</p></div></li>
+        <li><div><span class="t">Review in the comp</span><p class="d">Preview scene-linear or managed imagery through the same display transform used elsewhere.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="band" id="install">
+      <h2>Simple Windows install.</h2>
+      <p class="lede">The current public build is a Windows After Effects plug-in.</p>
+      <ol class="steps" data-reveal>
+        <li><div><span class="t">Download the .aex</span><p class="d">Grab it from the dist folder, or use the download button above.</p></div></li>
+        <li><div><span class="t">Copy it into an After Effects plug-ins folder</span><p class="d">Use your AE version's Support Files\Plug-ins folder, or an appropriate shared Adobe MediaCore location.</p></div></li>
+        <li><div><span class="t">Restart AE and add the effect</span><p class="d">Add ZURA OCIO Look from the Effects menu, then choose your configuration and viewing options.</p></div></li>
+      </ol>
+      <div class="actions">
+        <a class="btn btn--primary" href="https://github.com/ZURAVFX/ZURA-OCIO-Look/raw/refs/heads/main/dist/ZURA%20OCIO_Look.aex">Download .aex</a>
+        <a class="btn" href="https://github.com/ZURAVFX/ZURA-OCIO-Look/issues">Compatibility / bugs</a>
+      </div>
+      <div class="note">
+        <b>Important</b>
+        This is a viewing and look transform tool. It does not determine the correct input colour space for every source, and it is not a substitute for a correctly designed colour pipeline. This build contains OpenColorIO and upstream AdobeOCIO components, which retain their own licences and copyrights.
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <p class="site-footer__name">Elliot McKenzie / Zura</p>
+      <p>Motion designer, VFX artist &amp; production technologist</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="https://zuravfx.com/work/">Work</a>
+      <a href="https://zuravfx.com/about/">About</a>
+      <a href="https://zuravfx.com/products/">Tools + Downloads</a>
+      <a href="https://zuravfx.com/contact/">Contact me</a>
+    </nav>
+    <p>© 2026</p>
+  </div>
+</footer>
+
+<script>
+  if (document.documentElement.classList.contains("reveal-ready")) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: "0px 0px -5% 0px" });
+    document.querySelectorAll("[data-reveal]").forEach((el) => observer.observe(el));
+  }
+</script>
+</body>
+</html>
